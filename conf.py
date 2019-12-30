@@ -31,7 +31,7 @@ external_links = [
     },
     {
         "name": "小皮的菜园子",
-        "url": "https://www.imalan.cn",
+        "url": "https://blog.began.me",
         "brief": "小皮的主页。"
     }
 ]
