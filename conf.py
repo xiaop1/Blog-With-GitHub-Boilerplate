@@ -16,7 +16,7 @@ enable_jsdelivr = {
 # 站点设置
 site_name = "小皮的菜园子"
 site_logo = "${static_prefix}logo.png"
-site_build_date = "2019-12-30T22:00+08:00"
+site_build_date = "2019-12-30T22:30+08:00"
 author = "小皮"
 email = "zch@began.me"
 author_homepage = "https://blog.began.me"
