@@ -2,9 +2,9 @@
 layout: page
 title: 关于
 slug: about
-date: 2017/06/28 17:26:00
+date: 2019/12/30 10:00:00
 status: publish
-author: AlanDecode
+author: 小皮
 categories: 
   - Maverick
   - Dev
@@ -12,11 +12,29 @@ tags:
   - theme
 ---
 
-这里是我的个人博客，通过 GitHub 管理与构建。
+[notice]Life is fantastic![/notice]
 
+## 我是谁
+
+一名普通的在读学生，主修控制工程，喜欢Coding。
+
+```c
+int main(){
+    int Hardworking, Careful, Insist;
+    Graduate_After_Four_Years(Hardworking, Careful, Insist);
+    if(Hardworking && Careful && Insist){
+        printf("Get My Doctor Degree");
+    }
+    else{
+        printf("Loser");
+    }
+    return 0;
+}
+```
+
+![在读学校夜景](./images/Bjut_School.jpg)
 
 ## Contact
 
-Email: hi#imalan.cn (replace # with @)
+Email: zch#began.me
 
-Telegram：[AlanDecode](https://t.me/alandecode)
