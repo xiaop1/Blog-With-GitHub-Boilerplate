@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Win下搭建Sublime的C语言环境
-slug: alfred
+slug: sublime
 date: 2020-01-08 22:12
 status: publish
 author: 小皮
