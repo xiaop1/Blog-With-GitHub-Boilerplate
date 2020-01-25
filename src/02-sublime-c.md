@@ -14,11 +14,11 @@ excerpt: Sublime Text is a sophisticated text editor for code, markup and prose.
 ---
 
 ## Sublime安装
-[Sublime](https://www.sublimetext.com/)Sublime Text 是一款用于代码、标记和散文的精致文本编辑器。Sublime的安装可以在官网或者百度中搜索安装包，安装很简单（无需安装到C盘）。
+[Sublime](https://www.sublimetext.com/)是一款用于代码、标记和散文的精致文本编辑器。Sublime的安装可以在官网或者百度中搜索安装包，安装很简单（无需安装到C盘）。
 
 Sublime不仅可以用来当作文本编辑器，同时可以通过安装C、Python等语言的环境来当作简单的编译器来使用（不支持代码调试）。而且Sublime可以安装数以万计的插件，来提高工作效率。
 
-![Alfred search](./images/sublime-introduce.gif)
+![介绍](./images/sublime-introduce.gif)
 
 ## TDM-GCC安装
 
