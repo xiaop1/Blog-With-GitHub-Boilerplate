@@ -21,21 +21,20 @@
         }
     </script>
     
-<title>
-    Archives - 小皮的菜园子
-</title>
-<meta name="author" content="熊猫小A" />
-<meta name="description" content="厚积薄发。" />
-<meta property="og:title" content="" />
-<meta property="og:description" content="厚积薄发。" />
+<title>基于蓝牙的门锁改装 - 小皮的菜园子</title>
+<meta name="author" content="小皮" />
+<meta name="description" content="由于实验室的NFC无法使用，为了正常开门，所以给门锁加入了蓝牙控制功能。" />
+<meta property="og:title" content="基于蓝牙的门锁改装 - 小皮的菜园子" />
+<meta property="og:description" content="由于实验室的NFC无法使用，为了正常开门，所以给门锁加入了蓝牙控制功能。" />
 <meta property="og:site_name" content="小皮的菜园子" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="小皮的菜园子" />
-<meta name="twitter:title" content="" />
-<meta name="twitter:description" content="厚积薄发。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/archives/bluetooth-opendoor/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2020-01-25T16:00:00-00.00" />
+<meta name="twitter:title" content="基于蓝牙的门锁改装 - 小皮的菜园子" />
+<meta name="twitter:description" content="由于实验室的NFC无法使用，为了正常开门，所以给门锁加入了蓝牙控制功能。" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/logo.png" />
+<meta name="twitter:image" content="" />
 
 
     
@@ -80,41 +79,80 @@
             <div class="wrapper">
                 
 <main>    
-    
+    <section class="ga-section ga-content">
+        <article class="yue">
+            <h1 class="ga-post_title">基于蓝牙的门锁改装</h1>
+            <span class="ga-post_meta ga-mono">
+                <span>小皮</span>
+                <time>
+                    2020-01-25
+                </time>
+                
+                in <a no-style class="category" href="/category/默认分类/">
+                    默认分类
+                </a>
+                
+                
+            </span>
+            <div class="ga-content_body">
+                <h2>前言</h2>
+<p>常进的实验室门采用NFC模块配合钥匙打开，但运气太差碰到了学校网络问题导致门卡授权失败无法开门，同时钥匙也由于常年不用而不翼而飞，平时进门就需要求助小伙伴而变得异常麻烦，所以寻求一个快捷、实用的门锁改装方法就提上了日程。</p>
+<p>在改装前曾<strong>多次</strong>咨询过学校后勤，但大多时间都是推脱来逃避责任，如果想要更换锁芯更是需要<strong>300</strong>元，这让我萌生了利用蓝牙来开门的想法，这样可以仅仅加入一个蓝牙控制模块即可，剩余的供电和电机控制部分都可以直接利用。</p>
+<h2>控制模块设计</h2>
+<p>首先为了控制门内的电机模块，所以需要拆解门锁了解其控制时序，拆解后锁内NFC控制模块如下图所示（板子竟然是<strong>2011</strong>年做的，有年头了）。可以看出其外接引脚较少，包含供电、电机正反转引脚。通过万用表和示波器对其进行分析，得出NFC控制模块需<strong>5V</strong>供电；模块在接收到开门指令后首先电机正转信号置高<strong>100ms</strong>后置低，间隔<strong>8</strong>秒后电机反转信号置高<strong>100ms</strong>后置低。</p>
+<p>明白了NFC控制模块的控制时序后，就可以接管其控制权限，从而实现蓝牙控制。由于整个开门过程需要对电机进行开门与关门两步操作，同时还要接收来自蓝牙模块指令，所以采用MCU+蓝牙模块的方式进行控制。这里需要注意的是，电机的驱动至少需要<strong>100mA</strong>的驱动电流，MCU的引脚无法提高这么高的驱动能力，故需将MCU引脚接到NFC模块上的驱动芯片前级。</p>
+<p><figure class="pswp-item" style="flex: 37.5" data-width="3024" data-height="4032"><img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/fd92265e4b222994bab33c94fc6f37a6.jpg" alt="door-NFCModule" /><figcaption>door-NFCModule</figcaption></figure></p>
+<p>由于之前未使用过蓝牙模块，故首先在某宝上先购买模块化组件进行拼装（如下图所示）。同时因为锁内空间有限，故模块的选取受限，筛选后选择了<strong>STM32F030F4</strong>作为MCU，<strong>CC2541</strong>作为蓝牙模块。</p>
+<p><figure class="pswp-item" style="flex: 37.5" data-width="3024" data-height="4032"><img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/b9e3e63f4684dbf717ddc5e36bc4b9e5.jpg" alt="bluetooth-FirstTry" /><figcaption>bluetooth-FirstTry</figcaption></figure></p>
+<p>作为第一次实验效果还不错，板子在接收到开门指令后可以正常开门，且从外面看起来锁的外观无任何变化，至此已经完成了初步实验，基本满足预期设计指标，开门问题得到了解决。</p>
+<p>但这里还有一个问题需要解决——<strong>功耗</strong>。两个模块工作时的电流为<strong>40mA</strong>，功耗惊人的高，模块仅能持续工作10天。原因是两个模块都未开启低功耗模式，且外围电路会存在损耗，故需对目前设计进行优化以降低功耗。</p>
+<h2>控制模块设计优化</h2>
+<p>模块设计优化需做两个工作：</p>
+<ol>
+<li><p>精简模块，进一步缩小模块尺寸；</p>
+</li>
+<li><p>降低功耗，使得模块能够持续工作1年以上。</p>
+</li>
+</ol>
+<p>优化后的设计，将MCU与蓝牙模块集成在一块PCB上，同时外围电路去掉了无用的器件，在缩小模块尺寸的基础上降低了模块的功耗，优化后的模块工作电流仅为<strong>400uA</strong>，基本满足优化的设计指标。设计图与实物图如下图所示。</p>
+<p><figure class="pswp-item" style="flex: 50.0" data-width="1180" data-height="1180"><img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/a9493e4d261abf521cbacbccc895cfa8.jpg" alt="bluetooth-SecTry-PCB" /><figcaption>bluetooth-SecTry-PCB</figcaption></figure>
+<figure class="pswp-item" style="flex: 37.5" data-width="3024" data-height="4032"><img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/7401d80b9ddcbf84aaee4460680e8d42.jpg" alt="bluetooth-SecTry" /><figcaption>bluetooth-SecTry</figcaption></figure></p>
+<h2>总结</h2>
+<p>由NFC的授权失败到基于蓝牙的门锁改装，前后经历了两个周末，利用周末的碎片时间对蓝牙与低功耗的研究与实践，终于在可用性和持续性的前提下满足了开门的需求。在整个实践过程中，开始以为这是一个很简单的送分题，没想到最后在低功耗的问题上研究了几个小时，导致现在已经将目标瞄准了TI-CC2640，由于这款蓝牙芯片本身集成ARM芯片，能够实现单个蓝牙芯片替代目前所设计模块。（<del>计划年后对模块进行第二次优化，将功耗降低至<strong>100uA</strong>以下</del>）</p>
 
-<section id="ga-archive_list" class="ga-section" data-title="Archives">
-    <ul>
-        
-        <li>
-            <h1><a target="_self" class="ga-highlight" href="/archives/bluetooth-opendoor/">基于蓝牙的门锁改装</a></h1>
-            <time class="ga-mono">
-                2020-01-25
-            </time>
-        </li>
-        
-        <li>
-            <h1><a target="_self" class="ga-highlight" href="/archives/sublime/">Win下搭建Sublime的C语言环境</a></h1>
-            <time class="ga-mono">
-                2020-01-08
-            </time>
-        </li>
-        
-        <li>
-            <h1><a target="_self" class="ga-highlight" href="/archives/alfred/">Mac效率工具Alfred实现OCR</a></h1>
-            <time class="ga-mono">
-                2019-12-31
-            </time>
-        </li>
-        
-    </ul>
+            </div>
+        </article>
+        <div id="ga-tags">
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/Bluetooth/">#Bluetooth</a>
+    </span>
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/MCU/">#MCU</a>
+    </span>
+    
+</div>
+    </section>
+
+    
+<section id="ga-content_pager">
+
+    <div class="next">
+        <h3>没有了</h3>
+        <p class="yue">这是最新的文章</p>
+    </div>
+
+
+    <div class="prev">
+        <a class="ga-highlight" href="/archives/sublime/">Win下搭建Sublime的C语言环境</a>
+        <p class="yue">Sublime Text is a sophisticated text editor for code, markup and prose.</p>
+    </div>
+
 </section>
 
-<section class="ga-section ga-mono" id="ga-pager">
-    
-    <span>Page 1 of 1</span>
-    
-</section>
 
+    
 
 </main>
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>小皮的菜园子</title><link>/</link><description>厚积薄发。</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>${static_prefix}logo.png</url><title>小皮的菜园子</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Fri, 17 Jan 2020 02:30:32 +0806</lastBuildDate><pubDate>Fri, 17 Jan 2020 02:30:32 +0806</pubDate><item><title>Mac效率工具Alfred实现OCR</title><link>/archives/alfred/</link><description>&lt;h2&gt;Alfred是什么&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>小皮的菜园子</title><link>/</link><description>厚积薄发。</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>${static_prefix}logo.png</url><title>小皮的菜园子</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Sat, 25 Jan 2020 10:15:31 +0806</lastBuildDate><pubDate>Sat, 25 Jan 2020 10:15:31 +0806</pubDate><item><title>Mac效率工具Alfred实现OCR</title><link>/archives/alfred/</link><description>&lt;h2&gt;Alfred是什么&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://www.alfredapp.com/"&gt;Alfred&lt;/a&gt;是macOS的应用程序启动器和生产力应用程序。在Mac上可以通过Alfred快捷的打开App、执行系统指令、执行脚本、快速的在想要的网站搜索关键词（如谷歌、百度、维基百科、淘宝等）。&lt;/p&gt;
 &lt;p&gt;以上介绍的都是Alfred的基本功能，除此之外，它还可以编写Workflow来实现更多的功能。本文将介绍如何通过Workflow实现OCR文字识别，提高工作效率。&lt;/p&gt;
 &lt;p&gt;&lt;figure class="pswp-item" style="flex: 79.7872340425532" data-width="600" data-height="376"&gt;&lt;img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/085e4f7406381202c6d79c9e5c1bd80c.gif" alt="Alfred search" /&gt;&lt;figcaption&gt;Alfred search&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -14,9 +14,9 @@
 &lt;p&gt;本文主要通过Alfred这款效率工具，在其基本功能的基础上介绍其基于Workflow文字识别的实现。通过筛选网上现有的Workflow，挑选出效果最好的一款，且其本身的使用说明已经比较详尽，按照其步骤操作基本可以实现其功能。&lt;/p&gt;
 &lt;p&gt;基于此Workflow实现的文字OCR识别准确率高，并且能够识别换行，操作简单不用额外下载软件，并且完全免费，对标市面上已有的付费软件，使用体验优于付费软件。&lt;/p&gt;
 </description><author>zch@began.me (小皮)</author><guid isPermaLink="true">/archives/alfred/</guid><pubDate>Tue, 31 Dec 2019 13:32:00 +0806</pubDate></item><item><title>Win下搭建Sublime的C语言环境</title><link>/archives/sublime/</link><description>&lt;h2&gt;Sublime安装&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://www.sublimetext.com/"&gt;Sublime&lt;/a&gt;Sublime Text 是一款用于代码、标记和散文的精致文本编辑器。Sublime的安装可以在官网或者百度中搜索安装包，安装很简单（无需安装到C盘）。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sublimetext.com/"&gt;Sublime&lt;/a&gt;是一款用于代码、标记和散文的精致文本编辑器。Sublime的安装可以在官网或者百度中搜索安装包，安装很简单（无需安装到C盘）。&lt;/p&gt;
 &lt;p&gt;Sublime不仅可以用来当作文本编辑器，同时可以通过安装C、Python等语言的环境来当作简单的编译器来使用（不支持代码调试）。而且Sublime可以安装数以万计的插件，来提高工作效率。&lt;/p&gt;
-&lt;p&gt;&lt;figure class="pswp-item" style="flex: 103.09278350515464" data-width="600" data-height="291"&gt;&lt;img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/7c0f71d0da142d706f9f76c1d39f2269.gif" alt="Alfred search" /&gt;&lt;figcaption&gt;Alfred search&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class="pswp-item" style="flex: 103.09278350515464" data-width="600" data-height="291"&gt;&lt;img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/7c0f71d0da142d706f9f76c1d39f2269.gif" alt="介绍" /&gt;&lt;figcaption&gt;介绍&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;TDM-GCC安装&lt;/h2&gt;
 &lt;p&gt;MinGW是Windows的Minimallist GNU的缩写，是用于本机Microsoft Windows应用程序的简约开发环境。&lt;/p&gt;
 &lt;p&gt;网上常见的教程为使用MinGW环境，然而MinGW更新缓慢而且安装后可能出现问题，这里推荐使用&lt;a href="http://tdm-gcc.tdragon.net/download"&gt;TDM-GCC官网下载&lt;/a&gt;。（无需安装到C盘）&lt;/p&gt;
@@ -52,4 +52,28 @@
 &lt;p&gt;&lt;figure class="pswp-item" style="flex: 89.06542056074767" data-width="953" data-height="535"&gt;&lt;img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/ddc7ba097fd051be8faed8cd8b8b7f5c.jpg" alt="成功运行" /&gt;&lt;figcaption&gt;成功运行&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;总结&lt;/h2&gt;
 &lt;p&gt;本文通过说明在Win下如何搭建Sublime的C语言环境，介绍了一种轻量级编译代码的方式，通过这种方式不仅可以编译C语言，同理也可以编译Python等语言。同时借助其强大的插件，可以几乎替代代码编译器。&lt;/p&gt;
-</description><author>zch@began.me (小皮)</author><guid isPermaLink="true">/archives/sublime/</guid><pubDate>Wed, 08 Jan 2020 22:12:00 +0806</pubDate></item></channel></rss>
+</description><author>zch@began.me (小皮)</author><guid isPermaLink="true">/archives/sublime/</guid><pubDate>Wed, 08 Jan 2020 22:12:00 +0806</pubDate></item><item><title>基于蓝牙的门锁改装</title><link>/archives/bluetooth-opendoor/</link><description>&lt;h2&gt;前言&lt;/h2&gt;
+&lt;p&gt;常进的实验室门采用NFC模块配合钥匙打开，但运气太差碰到了学校网络问题导致门卡授权失败无法开门，同时钥匙也由于常年不用而不翼而飞，平时进门就需要求助小伙伴而变得异常麻烦，所以寻求一个快捷、实用的门锁改装方法就提上了日程。&lt;/p&gt;
+&lt;p&gt;在改装前曾&lt;strong&gt;多次&lt;/strong&gt;咨询过学校后勤，但大多时间都是推脱来逃避责任，如果想要更换锁芯更是需要&lt;strong&gt;300&lt;/strong&gt;元，这让我萌生了利用蓝牙来开门的想法，这样可以仅仅加入一个蓝牙控制模块即可，剩余的供电和电机控制部分都可以直接利用。&lt;/p&gt;
+&lt;h2&gt;控制模块设计&lt;/h2&gt;
+&lt;p&gt;首先为了控制门内的电机模块，所以需要拆解门锁了解其控制时序，拆解后锁内NFC控制模块如下图所示（板子竟然是&lt;strong&gt;2011&lt;/strong&gt;年做的，有年头了）。可以看出其外接引脚较少，包含供电、电机正反转引脚。通过万用表和示波器对其进行分析，得出NFC控制模块需&lt;strong&gt;5V&lt;/strong&gt;供电；模块在接收到开门指令后首先电机正转信号置高&lt;strong&gt;100ms&lt;/strong&gt;后置低，间隔&lt;strong&gt;8&lt;/strong&gt;秒后电机反转信号置高&lt;strong&gt;100ms&lt;/strong&gt;后置低。&lt;/p&gt;
+&lt;p&gt;明白了NFC控制模块的控制时序后，就可以接管其控制权限，从而实现蓝牙控制。由于整个开门过程需要对电机进行开门与关门两步操作，同时还要接收来自蓝牙模块指令，所以采用MCU+蓝牙模块的方式进行控制。这里需要注意的是，电机的驱动至少需要&lt;strong&gt;100mA&lt;/strong&gt;的驱动电流，MCU的引脚无法提高这么高的驱动能力，故需将MCU引脚接到NFC模块上的驱动芯片前级。&lt;/p&gt;
+&lt;p&gt;&lt;figure class="pswp-item" style="flex: 37.5" data-width="3024" data-height="4032"&gt;&lt;img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/fd92265e4b222994bab33c94fc6f37a6.jpg" alt="door-NFCModule" /&gt;&lt;figcaption&gt;door-NFCModule&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;由于之前未使用过蓝牙模块，故首先在某宝上先购买模块化组件进行拼装（如下图所示）。同时因为锁内空间有限，故模块的选取受限，筛选后选择了&lt;strong&gt;STM32F030F4&lt;/strong&gt;作为MCU，&lt;strong&gt;CC2541&lt;/strong&gt;作为蓝牙模块。&lt;/p&gt;
+&lt;p&gt;&lt;figure class="pswp-item" style="flex: 37.5" data-width="3024" data-height="4032"&gt;&lt;img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/b9e3e63f4684dbf717ddc5e36bc4b9e5.jpg" alt="bluetooth-FirstTry" /&gt;&lt;figcaption&gt;bluetooth-FirstTry&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;作为第一次实验效果还不错，板子在接收到开门指令后可以正常开门，且从外面看起来锁的外观无任何变化，至此已经完成了初步实验，基本满足预期设计指标，开门问题得到了解决。&lt;/p&gt;
+&lt;p&gt;但这里还有一个问题需要解决——&lt;strong&gt;功耗&lt;/strong&gt;。两个模块工作时的电流为&lt;strong&gt;40mA&lt;/strong&gt;，功耗惊人的高，模块仅能持续工作10天。原因是两个模块都未开启低功耗模式，且外围电路会存在损耗，故需对目前设计进行优化以降低功耗。&lt;/p&gt;
+&lt;h2&gt;控制模块设计优化&lt;/h2&gt;
+&lt;p&gt;模块设计优化需做两个工作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;精简模块，进一步缩小模块尺寸；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;降低功耗，使得模块能够持续工作1年以上。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;优化后的设计，将MCU与蓝牙模块集成在一块PCB上，同时外围电路去掉了无用的器件，在缩小模块尺寸的基础上降低了模块的功耗，优化后的模块工作电流仅为&lt;strong&gt;400uA&lt;/strong&gt;，基本满足优化的设计指标。设计图与实物图如下图所示。&lt;/p&gt;
+&lt;p&gt;&lt;figure class="pswp-item" style="flex: 50.0" data-width="1180" data-height="1180"&gt;&lt;img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/a9493e4d261abf521cbacbccc895cfa8.jpg" alt="bluetooth-SecTry-PCB" /&gt;&lt;figcaption&gt;bluetooth-SecTry-PCB&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class="pswp-item" style="flex: 37.5" data-width="3024" data-height="4032"&gt;&lt;img src="https://cdn.jsdelivr.net/gh/xiaop1/Blog-With-GitHub-Boilerplate@gh-pages/archives/assets/7401d80b9ddcbf84aaee4460680e8d42.jpg" alt="bluetooth-SecTry" /&gt;&lt;figcaption&gt;bluetooth-SecTry&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;总结&lt;/h2&gt;
+&lt;p&gt;由NFC的授权失败到基于蓝牙的门锁改装，前后经历了两个周末，利用周末的碎片时间对蓝牙与低功耗的研究与实践，终于在可用性和持续性的前提下满足了开门的需求。在整个实践过程中，开始以为这是一个很简单的送分题，没想到最后在低功耗的问题上研究了几个小时，导致现在已经将目标瞄准了TI-CC2640，由于这款蓝牙芯片本身集成ARM芯片，能够实现单个蓝牙芯片替代目前所设计模块。（&lt;del&gt;计划年后对模块进行第二次优化，将功耗降低至&lt;strong&gt;100uA&lt;/strong&gt;以下&lt;/del&gt;）&lt;/p&gt;
+</description><author>zch@began.me (小皮)</author><guid isPermaLink="true">/archives/bluetooth-opendoor/</guid><pubDate>Sat, 25 Jan 2020 16:00:00 +0806</pubDate></item></channel></rss>
