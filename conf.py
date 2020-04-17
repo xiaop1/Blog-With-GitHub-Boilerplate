@@ -78,6 +78,7 @@ head_addon = r'''
 
   gtag('config', 'UA-156457389-1');
 </script>
+<iframe width="100%" height="80px" frameBorder="0" src="https://datatrackers.io/covid19-coronavirus/en/country/widget/USA/" />
 '''
 
 footer_addon = ''
