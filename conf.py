@@ -82,6 +82,4 @@ head_addon = r'''
 
 footer_addon = ''
 
-body_addon = r'''
-'<iframe width="100%" height="80px" frameBorder="0" src="https://datatrackers.io/covid19-coronavirus/en/country/widget/USA/" />'
-'''
+body_addon = ''
