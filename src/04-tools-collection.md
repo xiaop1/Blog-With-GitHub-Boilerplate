@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 效率工具合集及最近的生活
-slug: bluetooth-opendoor
+slug: tools-collection
 date: 2020-06-01 11:00
 status: publish
 author: 小皮
@@ -10,6 +10,7 @@ categories:
 tags: 
   - Mac
   - Tools
+  - Life
 excerpt: 记录Mac下我正在使用的高效率工具，以及最近疫情宅家的生活总结。
 ---
 
