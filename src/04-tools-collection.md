@@ -18,23 +18,20 @@ excerpt: 记录Mac下我正在使用的高效率工具，以及最近疫情宅�
 
 平时搬砖时总会想如何简化工作流程提升工作效率，这一想法促使我不知疲倦日以继夜的发掘小而精的**Mac**（或跨平台）效率工具。
 
-| 工具名称         | 功能描述                                                     | 下载链接                                                     |
-| :--------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Bob              | Mac下全域划词翻译工具，支持截图翻译                          | https://github.com/ripperhe/Bob                              |
-| AutoCaption      | Mac下调用Siri为视频生成字幕，支持英语、普通话和粤语          | https://github.com/lbj96347/auto-caption-mac                 |
-| iina+            | Mac下通过调用iina播放器观看多平台直播，有效避免浏览器观看直播内存占用过高问题 | https://github.com/xjbeta/iina-plus                          |
-| WebPlotDigitizer | 多平台下对可视化数据图表进行逆向操作获取数据                 | https://automeris.io/WebPlotDigitizer/                       |
-| 知乎助手         | 多平台下爬取知乎数据并制作成epub格式电子书                   | https://github.com/YaoZeyuan/zhihuhelp                       |
-| Selenium         | Python下自动化工具                                           | pip install selenium                                         |
-| uBlock Origin    | Chrome上最好用的广告屏蔽及元素过滤插件                       | https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm |
-| Tempermonkey     | Chrome上最好用的Js脚本插件                                   | https://greasyfork.org/zh-CN                                 |
-| 微博爬虫         | Python下爬取微博用户数据                                     | https://github.com/dataabc/weiboSpider                       |
-| 微信助手         | Mac下多功能插件，可防撤回自动回复                            | https://github.com/MustangYM/WeChatExtension-ForMac          |
-| TBC              |                                                              |                                                              |
+- [Bob](https://github.com/ripperhe/Bob) Mac下全域划词翻译工具，支持截图翻译
+- [AutoCaption](https://github.com/lbj96347/auto-caption-mac) Mac下调用Siri为视频生成字幕，支持英语、普通话和粤语
+- [iina+](https://github.com/xjbeta/iina-plus) Mac下通过调用iina播放器观看多平台直播，有效避免浏览器观看直播内存占用过高问题
+- [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/) 多平台下对可视化数据图表进行逆向操作获取数据
+- [知乎助手](https://github.com/YaoZeyuan/zhihuhelp) 多平台下爬取知乎数据并制作成epub格式电子书
+- [Selenium](https://www.selenium.dev/downloads/) Python下自动化工具
+- [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm) Chrome上最好用的广告屏蔽及元素过滤插件（需科学上网下载）
+- [Tempermonkey](https://greasyfork.org/zh-CN) Chrome上最好用的Js脚本插件
+- [微博爬虫](https://github.com/dataabc/weiboSpider) Python下爬取微博用户数据
+- [微信助手](https://github.com/MustangYM/WeChatExtension-ForMac) Mac下多功能插件，可防撤回自动回复
 
 ## PS
 
-最近因为疫情宅家，导致之前立下的Flag都被暂时搁浅，不过值得欣慰的是有更多的事情捣鼓自己喜欢的事情，学习了许多小技巧新知识。
+最近因为疫情宅家，导致之前立下的Flag都被暂时搁浅，不过值得欣慰的是有更多的时间捣鼓自己喜欢的事情，学习了许多小技巧新知识。
 
 - [x] 熟悉Linux命令搭建了坚固的梯子（Doge）来科学上网
 - [x] 将一些重复性工作移植到Telegram让效率爆炸（微信能有电报一半好用就好了）
@@ -49,4 +46,4 @@ excerpt: 记录Mac下我正在使用的高效率工具，以及最近疫情宅�
 
 <center><b>Off The Wall</b></center>
 
-![Ollie](/Users/zhangchenhao/Desktop/coding/git/Blog-With-GitHub-Boilerplate/src/images/Ollie.jpg)
+![Ollie](./images/Ollie.jpg)
