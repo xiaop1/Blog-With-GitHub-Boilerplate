@@ -13,7 +13,7 @@ tags:
 excerpt: Sublime Text is a sophisticated text editor for code, markup and prose.
 ---
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog.02)
+![](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog.02)
 
 ## Sublime安装
 

@@ -13,7 +13,7 @@ tags:
 excerpt: 由于实验室的NFC无法使用，为了正常开门，所以给门锁加入了蓝牙控制功能。
 ---
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog.03)
+![](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog.03)
 
 ## 前言
 

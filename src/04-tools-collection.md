@@ -14,7 +14,7 @@ tags:
 excerpt: 记录Mac下我正在使用的高效率工具，以及最近疫情宅家的生活总结。
 ---
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog.04)
+![](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog.04)
 
 ## 工具列表
 

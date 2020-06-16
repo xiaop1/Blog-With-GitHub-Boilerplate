@@ -14,7 +14,7 @@ tags:
 
 [notice]Life is fantastic![/notice]
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog-about)
+![](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog-about)
 
 ## 我是谁
 

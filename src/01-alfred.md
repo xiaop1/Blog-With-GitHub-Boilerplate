@@ -13,7 +13,7 @@ tags:
 excerpt: Alfred是macOS的应用程序启动器和生产力应用程序。
 ---
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog.01)
+![](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog.01)
 
 ## Alfred是什么
 
