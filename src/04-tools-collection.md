@@ -14,6 +14,8 @@ tags:
 excerpt: 记录Mac下我正在使用的高效率工具，以及最近疫情宅家的生活总结。
 ---
 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog.04)
+
 ## 工具列表
 
 平时搬砖时总会想如何简化工作流程提升工作效率，这一想法促使我不知疲倦日以继夜的发掘小而精的**Mac**（或跨平台）效率工具。

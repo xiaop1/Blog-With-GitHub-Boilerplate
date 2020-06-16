@@ -14,6 +14,8 @@ tags:
 
 [notice]Life is fantastic![/notice]
 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog-about)
+
 ## 我是谁
 
 一名普通的在读学生，主修控制工程，喜欢Coding。
