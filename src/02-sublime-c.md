@@ -13,8 +13,6 @@ tags:
 excerpt: Sublime Text is a sophisticated text editor for code, markup and prose.
 ---
 
-![](https://visitor-badge.glitch.me/badge?page_id=xiaopi-blog.02)
-
 ## Sublime安装
 
 [Sublime](https://www.sublimetext.com/)是一款用于代码、标记和散文的精致文本编辑器。Sublime的安装可以在官网或者百度中搜索安装包，安装很简单（无需安装到C盘）。
